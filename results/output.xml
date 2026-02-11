@@ -1,326 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-10T16:41:28.089444" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-10T16:59:18.569821" rpa="false" schemaversion="5">
 <suite id="s1" name="Robotframework" source="C:\dev\robotframework">
 <suite id="s1-s1" name="Test" source="C:\dev\robotframework\test">
-<suite id="s1-s1-s1" name="Tests" source="C:\dev\robotframework\test\tests.robot">
-<test id="s1-s1-s1-t1" name="Scénario 1 : Connexion Valide" line="12">
-<kw name="Ouvrir Navigateur Et Aller Sur SauceDemo" owner="loginPage" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:28.275998" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
-<arg>${URL}</arg>
-<arg>${bw}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-10T16:41:28.275711" elapsed="0.727058"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-10T16:41:29.003011" elapsed="0.025898"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:28.275135" elapsed="0.753944"/>
-</kw>
-<kw name="Saisir Identifiants" owner="loginPage">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:29.030183" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
-<arg>${champ_username}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:29.029839" elapsed="0.068351"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:29.098735" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
-<arg>${champ_pwd}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:29.098390" elapsed="0.052785"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:29.151720" level="INFO">Clicking button 'id:login-button'.</msg>
-<arg>${login-btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:29.151373" elapsed="0.067553"/>
-</kw>
-<arg>${user_valide}</arg>
-<arg>${pwd_valide}</arg>
-<status status="PASS" start="2026-02-10T16:41:29.029436" elapsed="0.189648"/>
-</kw>
-<kw name="Vérifier Page Produits Affiche" owner="productPage">
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:29.220177" level="INFO">Verifying element 'class:title' contains exact text 'Products'.</msg>
-<arg>${product_title}</arg>
-<arg>Products</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2026-02-10T16:41:29.219909" elapsed="0.016306"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:29.219512" elapsed="0.016886"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-10T16:41:29.236838" elapsed="2.103395"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:28.272304" elapsed="3.068960"/>
+<suite id="s1-s1-s1" name="Testsxray" source="C:\dev\robotframework\test\testsxray.robot">
+<test id="s1-s1-s1-t1" name="Processus d'achat" line="15">
+<tag>POEI2-1046</tag>
+<status status="FAIL" start="2026-02-10T16:59:18.750856" elapsed="0.003684">Test cannot be empty.</status>
 </test>
-<test id="s1-s1-s1-t2" name="Scénario 2 : Connexion Invalide" line="16">
-<kw name="Ouvrir Navigateur Et Aller Sur SauceDemo" owner="loginPage" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:31.361547" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
-<arg>${URL}</arg>
-<arg>${bw}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-10T16:41:31.359488" elapsed="0.842957"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-10T16:41:32.202702" elapsed="0.023693"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:31.358628" elapsed="0.867937"/>
-</kw>
-<kw name="Saisir Identifiants" owner="loginPage">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:32.227807" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
-<arg>${champ_username}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:32.227519" elapsed="0.067005"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:32.295154" level="INFO">Typing text 'mauvais_mdp' into text field 'id:password'.</msg>
-<arg>${champ_pwd}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:32.294727" elapsed="0.051089"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:32.346333" level="INFO">Clicking button 'id:login-button'.</msg>
-<arg>${login-btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:32.346009" elapsed="0.051472"/>
-</kw>
-<arg>${user_valide}</arg>
-<arg>mauvais_mdp</arg>
-<status status="PASS" start="2026-02-10T16:41:32.227026" elapsed="0.170608"/>
-</kw>
-<kw name="Vérifier Message Erreur Affiche" owner="loginPage">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:32.414015" level="INFO">Element 'xpath://h3[@data-test='error']' is displayed.</msg>
-<arg>${msg_err}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-10T16:41:32.398734" elapsed="0.015567"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:32.398183" elapsed="0.016246"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-10T16:41:32.414728" elapsed="2.108463"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:31.351167" elapsed="3.173029"/>
+<test id="s1-s1-s1-t2" name="Scénario 1 : Connexion Valide" line="17">
+<status status="FAIL" start="2026-02-10T16:59:18.757211" elapsed="0.002000">Test cannot be empty.</status>
 </test>
-<test id="s1-s1-s1-t3" name="Scénario 3 : Ajout d'un Produit Au Panier" line="20">
-<kw name="Ouvrir Navigateur Et Aller Sur SauceDemo" owner="loginPage" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:34.545739" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
-<arg>${URL}</arg>
-<arg>${bw}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-10T16:41:34.545390" elapsed="0.779672"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-10T16:41:35.325252" elapsed="0.018666"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:34.544892" elapsed="0.799264"/>
-</kw>
-<kw name="Saisir Identifiants" owner="loginPage">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:35.345277" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
-<arg>${champ_username}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:35.345025" elapsed="0.063750"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:35.409331" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
-<arg>${champ_pwd}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:35.408970" elapsed="0.050595"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:35.460111" level="INFO">Clicking button 'id:login-button'.</msg>
-<arg>${login-btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:35.459765" elapsed="0.070488"/>
-</kw>
-<arg>${user_valide}</arg>
-<arg>${pwd_valide}</arg>
-<status status="PASS" start="2026-02-10T16:41:35.344599" elapsed="0.185800"/>
-</kw>
-<kw name="Cliquer Sur Add To Cart" owner="productPage">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:35.531454" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
-<arg>${add_to_cart_btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:35.531187" elapsed="0.052354"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:35.530824" elapsed="0.052866"/>
-</kw>
-<kw name="Vérifier Panier Contient" owner="productPage">
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:35.584851" level="INFO">Verifying element 'class:shopping_cart_badge' contains exact text '1'.</msg>
-<arg>${cart_badge}</arg>
-<arg>${quantite}</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2026-02-10T16:41:35.584538" elapsed="0.013816"/>
-</kw>
-<arg>1</arg>
-<status status="PASS" start="2026-02-10T16:41:35.584082" elapsed="0.014413"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-10T16:41:35.598815" elapsed="2.090707"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:34.534198" elapsed="3.156522"/>
+<test id="s1-s1-s1-t3" name="Scénario 2 : Connexion Invalide" line="18">
+<status status="FAIL" start="2026-02-10T16:59:18.761468" elapsed="0.002904">Test cannot be empty.</status>
 </test>
-<test id="s1-s1-s1-t4" name="Scénario 4 : Finalisation de Commande" line="25">
-<kw name="Ouvrir Navigateur Et Aller Sur SauceDemo" owner="loginPage" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:37.713349" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
-<arg>${URL}</arg>
-<arg>${bw}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-10T16:41:37.712921" elapsed="0.812607"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.525741" elapsed="0.031105"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:37.712329" elapsed="0.844657"/>
-</kw>
-<kw name="Saisir Identifiants" owner="loginPage">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.558034" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
-<arg>${champ_username}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.557788" elapsed="0.063893"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.622240" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
-<arg>${champ_pwd}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.621882" elapsed="0.048316"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.670817" level="INFO">Clicking button 'id:login-button'.</msg>
-<arg>${login-btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.670416" elapsed="0.063520"/>
-</kw>
-<arg>${user_valide}</arg>
-<arg>${pwd_valide}</arg>
-<status status="PASS" start="2026-02-10T16:41:38.557382" elapsed="0.176759"/>
-</kw>
-<kw name="Cliquer Sur Add To Cart" owner="productPage">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.735383" level="INFO">Clicking button 'id:add-to-cart-sauce-labs-backpack'.</msg>
-<arg>${add_to_cart_btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.734994" elapsed="0.050991"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:38.734539" elapsed="0.051602"/>
-</kw>
-<kw name="Aller Au Checkout" owner="cartPage">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.787281" level="INFO">Clicking element 'class:shopping_cart_link'.</msg>
-<arg>${cart_link}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.786991" elapsed="0.036603"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.824214" level="INFO">Clicking button 'id:checkout'.</msg>
-<arg>${checkout-btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.823815" elapsed="0.064735"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:38.786457" elapsed="0.102239"/>
-</kw>
-<kw name="Remplir Informations Client" owner="checkoutPage">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.889623" level="INFO">Typing text 'Test' into text field 'id:first-name'.</msg>
-<arg>${champ_prenom}</arg>
-<arg>${prenom}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.889380" elapsed="0.045637"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.935546" level="INFO">Typing text 'Test' into text field 'id:last-name'.</msg>
-<arg>${champ_nom}</arg>
-<arg>${nom}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.935209" elapsed="0.043064"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:38.978797" level="INFO">Typing text '75000' into text field 'id:postal-code'.</msg>
-<arg>${champ_cp}</arg>
-<arg>${cp}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:38.978464" elapsed="0.041491"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:39.020706" level="INFO">Clicking button 'id:continue'.</msg>
-<arg>${continue-btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:39.020257" elapsed="0.044361"/>
-</kw>
-<arg>Test</arg>
-<arg>Test</arg>
-<arg>75000</arg>
-<status status="PASS" start="2026-02-10T16:41:38.888988" elapsed="0.175775"/>
-</kw>
-<kw name="Finaliser Et Vérifier Confirmation" owner="checkoutPage">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:39.065689" level="INFO">Clicking button '//*[@id="finish"]'.</msg>
-<arg>${finish-btn}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-10T16:41:39.065418" elapsed="0.045963"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Thank you for your order!</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-02-10T16:41:39.111568" elapsed="0.006184"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2026-02-10T16:41:39.128136" level="INFO">Element 'class:complete-header' is displayed.</msg>
-<arg>${ty4yourorder}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2026-02-10T16:41:39.117929" elapsed="0.010446"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:39.065069" elapsed="0.063421"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-10T16:41:39.128803" elapsed="2.109500"/>
-</kw>
-<status status="PASS" start="2026-02-10T16:41:37.700673" elapsed="3.538803"/>
+<test id="s1-s1-s1-t4" name="Scénario 3 : Ajout d'un Produit Au Panier" line="19">
+<status status="FAIL" start="2026-02-10T16:59:18.766711" elapsed="0.001802">Test cannot be empty.</status>
 </test>
-<status status="PASS" start="2026-02-10T16:41:28.130573" elapsed="13.118781"/>
+<test id="s1-s1-s1-t5" name="Scénario 4 : Finalisation de Commande" line="20">
+<status status="FAIL" start="2026-02-10T16:59:18.770435" elapsed="0.001797">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2026-02-10T16:59:18.606759" elapsed="0.167728"/>
 </suite>
-<status status="PASS" start="2026-02-10T16:41:28.127390" elapsed="13.133578"/>
+<status status="FAIL" start="2026-02-10T16:59:18.603860" elapsed="0.173110"/>
 </suite>
-<status status="PASS" start="2026-02-10T16:41:28.092860" elapsed="13.171355"/>
+<status status="FAIL" start="2026-02-10T16:59:18.573429" elapsed="0.205740"/>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">POEI2-1046</stat>
 </tag>
 <suite>
-<stat name="Robotframework" id="s1" pass="4" fail="0" skip="0">Robotframework</stat>
-<stat name="Test" id="s1-s1" pass="4" fail="0" skip="0">Robotframework.Test</stat>
-<stat name="Tests" id="s1-s1-s1" pass="4" fail="0" skip="0">Robotframework.Test.Tests</stat>
+<stat name="Robotframework" id="s1" pass="0" fail="5" skip="0">Robotframework</stat>
+<stat name="Test" id="s1-s1" pass="0" fail="5" skip="0">Robotframework.Test</stat>
+<stat name="Testsxray" id="s1-s1-s1" pass="0" fail="5" skip="0">Robotframework.Test.Testsxray</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2026-02-10T16:59:18.742221" level="ERROR">Error in file 'C:\dev\robotframework\test\tests.robot' on line 8: Setting 'Test Setup' is not allowed in resource file.</msg>
+<msg time="2026-02-10T16:59:18.745186" level="ERROR">Error in file 'C:\dev\robotframework\test\tests.robot' on line 9: Setting 'Test Teardown' is not allowed in resource file.</msg>
+<msg time="2026-02-10T16:59:18.747277" level="ERROR">Error in file 'C:\dev\robotframework\test\testsxray.robot' on line 10: Error in file 'C:\dev\robotframework\test\tests.robot' on line 11: Resource file with 'Test Cases' section is invalid.</msg>
 </errors>
 </robot>

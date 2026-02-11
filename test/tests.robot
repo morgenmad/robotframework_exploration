@@ -28,3 +28,16 @@ Scénario 4 : Finalisation de Commande
     Aller Au Checkout
     Remplir Informations Client    Test    Test    75000
     Finaliser Et Vérifier Confirmation
+
+
+
+Scénario 5 - Import du test de Xray
+    [Tags]  POEI2-1046
+        Open Login page
+        Input valid username and password
+        Click login button
+        add product to cart
+        Go to Cart page 
+        Click checkout
+        Fill checkout info
+        logout   
