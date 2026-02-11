@@ -33,11 +33,11 @@ Scénario 4 : Finalisation de Commande
 
 Scénario 5 - Import du test de Xray
     [Tags]  POEI2-1046
-        Open Login page
-        Input valid username and password
-        Click login button
-        add product to cart
-        Go to Cart page 
-        Click checkout
-        Fill checkout info
-        logout   
+        Ouvrir Navigateur Et Aller Sur Saucedemo
+        Saisir Identifiants    ${user_valide}    ${pwd_valide}
+        Cliquer Sur Add To Cart
+        Vérifier Panier Contient    1 
+        Aller Au Checkout
+        Remplir Informations Client    Test    Test    75000   
+
+# output sur XRAY : test exec -> https://team-1612820401992.atlassian.net/projects/POEI2?selectedItem=com.atlassian.plugins.atlassian-connect-plugin%3Acom.xpandit.plugins.xray__testing-board&ac.testExecutionKey=POEI2-1061&ac.testKey=POEI2-1046#!page=test-run&testExecutionKey=POEI2-1061&testKey=POEI2-1046&testPlanId=        
