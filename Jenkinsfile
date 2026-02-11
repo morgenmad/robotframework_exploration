@@ -1,15 +1,18 @@
-pipeline{
-
+pipeline {
     agent any
 
-        post {
+    stages {
 
-        success {
-            echo 'Tests exécutés avec succès 🎉'
+        stage('Installation des dependances') {
+            steps {
+                bat 'pip3 install -r requirements.txt'
+            }
         }
 
-        failure {
-            echo 'Des tests ont échoué ❌'
+        stage('Execution des tests') {
+            steps {
+                bat 'robot tests'
+            }
         }
     }
 }
