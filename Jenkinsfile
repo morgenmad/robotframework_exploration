@@ -11,7 +11,7 @@ pipeline {
 
         stage('Execution des tests') {
             steps {
-                bat 'robot tests'
+                bat 'robot .'
             }
         }
     }
